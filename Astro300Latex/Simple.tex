@@ -1,0 +1,49 @@
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage[margin=3cm]{geometry}
+%\usepackage{chemfig}
+
+\begin{document}
+
+% This is a comment and will not be printed
+
+One of 
+the main appeals 
+of \LaTeX\ is that it is \textit{very} good at
+\textbf{typesetting} equations:
+
+$$
+a_n = \left(\frac{1}{\pi}\right)\cos(4x)
+$$
+
+\begin{equation}
+\nabla \times \mathbf {E} =-{\frac {1}{c}}{\frac {\partial \mathbf {B} }{\partial t}}
+\label{my_equation}
+\end{equation}
+
+
+
+\begin{equation}
+\theta =\theta _{0}+\omega t-{\frac{1}{2}}\alpha t^{2}
+\label{my_other_equation}
+\end{equation}
+
+The advantage of the \texttt{equation} environment is that is allows 
+you to label and reference equations like you see above in Equations 
+\ref{my_equation} and \ref{my_other_equation}.
+
+\clearpage
+
+This is another page
+
+\end{document}
+
+Nothing below the end command will be processed. I find this a useful place to put drafts/notes and stuff
+
+\begin{equation}
+|\psi \rangle =a_{\psi }|\uparrow _{z}\rangle +b_{\psi }|\downarrow _{z}\rangle
+\label{my_other_other_equation}
+\end{equation}
+
+\vspace{2cm}
+\chemfig{H-C(-[2]H)(-[6]H)-C(=[1]O)-[7]H}
